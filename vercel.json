@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "spotify-music-api",
+    "name": "user-api",
     "builds": [
        { "src": "server.js", "use": "@vercel/node" }
     ],
