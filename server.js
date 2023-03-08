@@ -59,6 +59,9 @@ passport.use(strategy);
 app.use(passport.initialize());
 
 /* TODO Add Your Routes Here */
+app.get("/",(req,res)=>{
+    res.send("welcome to api")
+})
 
 app.post("/api/user/register", function (req, res) {
     userService.registerUser(req.body)
