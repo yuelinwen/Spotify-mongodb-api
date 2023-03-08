@@ -60,7 +60,12 @@ app.use(passport.initialize());
 
 /* TODO Add Your Routes Here */
 app.get("/",(req,res)=>{
-    res.send("welcome to api")
+    res.status(200).json({
+        status: 'ok',
+        author: 'Yuelin Wen',
+        githubUrl: 'https://github.com/yuelin-wen/spotify-mongodb-api',
+        // version,
+    });
 })
 
 app.post("/api/user/register", function (req, res) {
